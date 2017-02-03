@@ -1,0 +1,41 @@
+﻿We have a little experience with creating movie reviews. In this application you will be able to see reviews and create your own reviews for movies.
+
+Deliverables
+A github repository containing your Web Forms Project
+Objectives
+Manage multiple entity framework model relations
+Manage multiple web forms designs and code behind files
+Make a killer user experience
+Requirements
+A user can add a movie to the database
+A user can view all movies in the database
+A user can view all reviews in the database
+A user can create a review in the database
+A user can edit a movie detail
+A user CANNOT edit a review detail
+You must use a CSS framework of your choice. Bootstrap, Semantic, Materialize, Foundation...
+Normal Mode
+BEFORE YOU START!!!! READ THIS In the past our Movie Review project has consisted of 3 models. For this assignment we will not be using the "Person" data model. Your model structure should contain the following:
+
+Movie Model
+Title
+Genre
+IMDB Link
+Release Date
+Review Model
+Name of the reviewer (string, not FK)
+Movie being reviewed (FK)
+Rating
+Optional Age of Reviewer
+Optional Gender of the Reviewer
+Optional Occupation of the Reviewer
+You will be required to create a web form page (.aspx) for all functionality of the movie review database. This includes:
+
+A page to view all of the reviews (possibly Default)
+A page to create a review for a movie (how do you pass the movie to the create review page? or do they just select the movie from a dropdown?)
+A page to add a movie to the database
+A page to modify a movie detail
+All pages should be linked together through use of a consistent navigation bar. All pages must have consistent styling / color scheme. You are allowed to start with a color "theme" but you are required to build the HTML yourself. You are not allowed to download a free/paid template from any source.
+
+Hard Mode
+All of the requirements of normal mode but include a way to show each movie's average rating.
