@@ -88,7 +88,9 @@
             <% foreach (var movie in Movies)
                 { %>
             <tr>
-                <td><a href="AddReview.aspx"?id="<%=movie.Title%>"/><%= movie.Title %></td>
+                <td><%= movie.Title %></td>
+                <td><a href="AddReview.aspx"?id="<%=movie.Id%>"/>Review</td>
+                <td><a href="EditMovie.aspx"?id="<%=movie.Id%>"/>Edit</td>
             </tr>
             <%} %>
         </tbody>

@@ -14,8 +14,7 @@ namespace Melp
         public List<Review> Reviews;
         protected void Page_Load(object sender, EventArgs e)
         {
-                
-                var movieId = int.Parse(Request.QueryString["id"]);
+            var movieId = int.Parse(Request.QueryString["id"]);
             {
                 using (var db = new ReviewContext())
                 {
@@ -33,34 +32,12 @@ namespace Melp
                         };
                         db.Reviews.Add(review);
                         db.SaveChanges();
+                        Response.Redirect("Default.aspx");
                     }
-                    //Response.Redirect("Default.aspx");
-                }
-            }
-            }
-        
-    }
-}
-/*
- 
- protected void Page_Load(object sender, EventArgs e)
-        {
-            var noteId = int.Parse(Request.QueryString["id"]);
-
-            using (var db = new NoteContext())
-            {
-                noteInstance = db.Notes.First(n => n.Id == noteId);
-
-                if (IsPostBack)
-                {
-                    noteInstance.Title = Request.Form["title"];
-                    noteInstance.Body = Request.Form["body"];
-                    noteInstance.Timestamp = Request.Form["timestamp"];
-
-                    db.Entry(noteInstance).State = EntityState.Modified;
-                    db.SaveChanges();
-                    Response.Redirect("Default.aspx");
                 }
             }
         }
-*/
+
+    }
+}
+

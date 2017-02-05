@@ -46,9 +46,8 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-    <div>
     <form runat="server" method="post">
-        <h2>Put Movie Title Here</h2>
+        <h2><%=movieInstance %></h2>
 
         <table class="table table-bordered table-hover">
             <thead>
@@ -62,8 +61,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <div class="form-group">
+                <tr>                    
                         <td>
                             <input type="text" class="form-control" name="name" placeholder="Name"/></td>
                         <td>
@@ -77,13 +75,12 @@
                         <td>
                             <input type="text" class="form-control" name="rating" placeholder="Rating" /></td>
                 </tr>
-                </div>
+                
             </tbody>
         </table>
         <input type="submit" class="btn btn-default" value="Add" />
     </form>
-    </div>
-    </form>
+   
     <table class="table">
             <thead>
                 <tr>

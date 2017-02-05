@@ -102,7 +102,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AddMovie.aspx" />
+    <Content Include="EditMovie.aspx" />
     <Content Include="AddReview.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -143,12 +143,12 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddMovie.aspx.cs">
-      <DependentUpon>AddMovie.aspx</DependentUpon>
+    <Compile Include="EditMovie.aspx.cs">
+      <DependentUpon>EditMovie.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddMovie.aspx.designer.cs">
-      <DependentUpon>AddMovie.aspx</DependentUpon>
+    <Compile Include="EditMovie.aspx.designer.cs">
+      <DependentUpon>EditMovie.aspx</DependentUpon>
     </Compile>
     <Compile Include="AddReview.aspx.cs">
       <DependentUpon>AddReview.aspx</DependentUpon>

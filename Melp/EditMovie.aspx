@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddMovie.aspx.cs" Inherits="Melp.AddMovie" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EditMovie.aspx.cs" Inherits="Melp.AddMovie" %>
 
 <!DOCTYPE html>
 
@@ -53,7 +53,7 @@
     </nav>
     <form id="form1" runat="server">
     
-        <h2>Add A Movie</h2>
+        <h2>Edit Movie</h2>
         <table class="table table-bordered table-hover">
             <thead>
                 <tr>
@@ -78,7 +78,7 @@
                 
             </tbody>
         </table>
-        <input type="submit" class="btn btn-default" value="Add" />
+        <input type="submit" class="btn btn-default" value="Update" />
     </form>
 </body>
 </html>
