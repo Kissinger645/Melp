@@ -1,14 +1,14 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Melp.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddMovie.aspx.cs" Inherits="Melp.AddMovie" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Melp</title>
+    <title>Melp - Add Movie</title>
     <link href="Content/bootstrap.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <nav class="navbar navbar-default">
+     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -32,6 +32,10 @@
                             <li><a href="#">Action</a></li>
                             <li><a href="#">Another action</a></li>
                             <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -48,8 +52,8 @@
         <!-- /.container-fluid -->
     </nav>
     <form id="form1" runat="server">
-
-        <h3>Add A Movie</h3>
+    
+        <h2>Add A Movie</h2>
         <table class="table table-bordered table-hover">
             <thead>
                 <tr>
@@ -57,41 +61,24 @@
                     <th>Genre</th>
                     <th>IMDB url</th>
                     <th>Release Date</th>
-
+                    
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>
-                        <input type="text" class="form-control" name="title" placeholder="Title" /></td>
-                    <td>
-                        <input type="text" class="form-control" name="genre" placeholder="Genre" /></td>
-                    <td>
-                        <input type="text" class="form-control" name="imdburl" placeholder="IMDB url" /></td>
-                    <td>
-                        <input type="text" class="form-control" name="release" placeholder="Release date" /></td>
+                <tr>                   
+                        <td>
+                            <input type="text" class="form-control" name="title" placeholder="Title"/></td>
+                        <td>
+                            <input type="text" class="form-control" name="genre" placeholder="Genre" /></td>
+                        <td>
+                            <input type="text" class="form-control" name="imdburl" placeholder="IMDB url" /></td>
+                        <td>
+                            <input type="text" class="form-control" name="release" placeholder="Release date" /></td>                        
                 </tr>
-
+                
             </tbody>
         </table>
         <input type="submit" class="btn btn-default" value="Add" />
     </form>
-    <b />
-    <b />
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Movie</th>
-            </tr>
-        </thead>
-        <tbody>
-            <% foreach (var movie in Movies)
-                { %>
-            <tr>
-                <td><a href="AddReview.aspx"?id="<%=movie.Title%>"/><%= movie.Title %></td>
-            </tr>
-            <%} %>
-        </tbody>
-    </table>
 </body>
 </html>

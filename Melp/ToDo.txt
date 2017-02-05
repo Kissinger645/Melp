@@ -1,0 +1,3 @@
+﻿
+get Movie title passed to list of reviews
+Link movies on homepage to page with all movie reviews, with option to add a review

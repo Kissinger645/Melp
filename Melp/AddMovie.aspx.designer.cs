@@ -11,7 +11,7 @@ namespace Melp
 {
 
 
-    public partial class Review
+    public partial class AddMovie
     {
 
         /// <summary>
