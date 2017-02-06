@@ -10,10 +10,14 @@ namespace Melp
 {
     public partial class AddMovie : System.Web.UI.Page
     {
+        public Movie movieInstance;
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            var movieId = int.Parse(Request.QueryString["id"]);
             using (var db = new ReviewContext())
             {
+                movieInstance = db.Movies.First(m => m.Id == movieId);
                 if (IsPostBack)
                 {
                     var movie = new Movie
@@ -25,6 +29,7 @@ namespace Melp
                     };
                     db.Movies.Add(movie);
                     db.SaveChanges();
+                    Response.Redirect("Default.aspx");
                 }
             }
         }

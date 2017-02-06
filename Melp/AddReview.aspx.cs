@@ -15,8 +15,7 @@ namespace Melp
         protected void Page_Load(object sender, EventArgs e)
         {
             var movieId = int.Parse(Request.QueryString["id"]);
-            {
-                using (var db = new ReviewContext())
+            using (var db = new ReviewContext())
                 {
                     movieInstance = db.Movies.First(m => m.Id == movieId);
                     if (IsPostBack)
@@ -35,7 +34,7 @@ namespace Melp
                         Response.Redirect("Default.aspx");
                     }
                 }
-            }
+            
         }
 
     }
