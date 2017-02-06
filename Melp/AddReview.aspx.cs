@@ -14,12 +14,14 @@ namespace Melp
         public List<Review> Reviews;
         protected void Page_Load(object sender, EventArgs e)
         {
-            var movieId = int.Parse(Request.QueryString["id"]);
+            var movieId = int.Parse(Request.QueryString["id"]);            
             using (var db = new ReviewContext())
                 {
                     movieInstance = db.Movies.First(m => m.Id == movieId);
                     if (IsPostBack)
                     {
+                    
+
                         var review = new Review
                         {
                             Name = Request.Form["name"],
@@ -39,4 +41,10 @@ namespace Melp
 
     }
 }
-
+/*var tmpRating= 0;
+if (String.IsNullOrEmpty(Request.Form["rating"]))
+{
+tmpRating = null;
+}
+tmpRating = int.Parse(Request.Form["rating"]);
+*/

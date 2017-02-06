@@ -41,7 +41,7 @@
                     <td><%= review.Age %></td>
                     <td><%= review.Gender %></td>
                     <td><%= review.Occupation %></td>  
-                    <td><%= review.Title %></td>
+                    <td><%= review.Title.Title %></td>
                     <td><%= review.Rating %></td>
                                       
                 </tr>
