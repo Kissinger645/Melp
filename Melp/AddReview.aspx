@@ -14,12 +14,16 @@
             <div class="navbar-header">                
                 <a class="navbar-brand" href="Default.aspx">MELP</a>
             </div>
-            <a href="ReviewsAll.aspx">Reviews</a>
+            
+            <ul class="nav navbar-nav navbar-left">
+        <li><a href="ReviewsAll.aspx">Reviews</a></li>
+          </ul>  
         </div>
         <!-- /.container-fluid -->
     </nav>
+    <div class="container">
     <form runat="server" method="post">
-        <h2><%=movieInstance %></h2>
+        <h2>Add Review</h2>
 
         <table class="table table-bordered table-hover">
             <thead>
@@ -50,5 +54,6 @@
         </table>
         <input type="submit" class="btn btn-default" value="Add" />
     </form>
+        </div>
 </body>
 </html>
