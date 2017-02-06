@@ -14,6 +14,10 @@
             <div class="navbar-header">                
                 <a class="navbar-brand" href="Default.aspx">MELP</a>
             </div>
+            
+            <ul class="nav navbar-nav navbar-left">
+        <li><a href="ReviewsAll.aspx">Reviews</a></li>
+          </ul>  
         </div>
         <!-- /.container-fluid -->
     </nav>
@@ -36,13 +40,15 @@
                         <td>
                             <input type="text" class="form-control" name="title" value="<%=movieInstance.Title %>" /></td>
                         <td>
-                            <input type="text" class="form-control" name="genre" value="<%=movieInstance.Genre %>" />/></td>
+                            <input type="text" class="form-control" name="genre" value="<%=movieInstance.Genre %>" />
+
+                        </td>
                         <td>
                             <input type="text" class="form-control" name="imdburl" value="<%=movieInstance.IMDBlink %>" />
-                            /></td>
+                        </td>
                         <td>
                             <input type="text" class="form-control" name="release" value="<%=movieInstance.Release %>" />
-                            /></td>
+                            </td>
                     </tr>
 
                 </tbody>

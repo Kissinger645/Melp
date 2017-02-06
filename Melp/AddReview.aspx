@@ -14,6 +14,7 @@
             <div class="navbar-header">                
                 <a class="navbar-brand" href="Default.aspx">MELP</a>
             </div>
+            <a href="ReviewsAll.aspx">Reviews</a>
         </div>
         <!-- /.container-fluid -->
     </nav>
